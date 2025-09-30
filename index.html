@@ -7,63 +7,49 @@
   <title>Timekeeper Demo</title>
   <link rel="stylesheet" href="main.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
-  
- 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
 </head>
-  <body>
-  <!-- Top Bar -->
-  <div class="top-bar d-flex justify-content-between align-items-center">
-    <div>
-      Follow Us:
-      <i class="fab fa-facebook-f"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-google-plus-g"></i>
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-youtube"></i>
-    </div>
-    <div>
-   <li class="account-menu">
-  <a href="#">My Account ▾</a>
-  <ul class="dropdown-menu">
-    <li><a href="login.html">Log in</a></li>
-    <li><a href="register.html">Create account</a></li> 
-  </ul>  
-</li>
+
+<body>
+  <button id="openModal" class="btn btn-danger m-3">Open Modal</button>
 
 
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Hello!</h2>
+      <p>This is a simple modal using JS.</p>
     </div>
   </div>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <i class="fas fa-stopwatch"></i> Timekeeper
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          
-       
-            <a class="nav-link" href="aboutus.html" role="button" >About Us</a>
-           
-          
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-          
-          <li class="nav-item"><a class="nav-link position-relative" href="#">
-            <i class="fas fa-shopping-cart"></i><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
-          </a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <div class="top-bar d-flex justify-content-between align-items-center class=" navbar" id="siteNavbar"">
+    <div>
+      Follow Us:
+      <i class=" fab fa-facebook-f"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-google-plus-g"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-youtube"></i>
+  </div>
+  <div>
+    <li class="account-menu">
+      <a href="#">My Account ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="login.html">Log in</a></li>
+        <li><a href="register.html">Create account</a></li>
+      </ul>
+    </li>
 
 
-  <!-- Carousel Section -->
+  </div>
+  </div>
+
+
+
+
+
   <div id="watchCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#watchCarousel" data-bs-slide-to="0" class="active"></button>
@@ -77,7 +63,8 @@
             <div class="col-md-6">
               <h6 class="text-muted">Nice Top Series</h6>
               <h1 class="fw-bold">Black Great Addition</h1>
-              <p class="text-secondary">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <p class="text-secondary">It has survived not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged.</p>
               <a href="#" class="btn btn-shop mt-3">Shopping Now</a>
             </div>
             <div class="col-md-6 text-center">
@@ -147,142 +134,142 @@
   </div>
 
 
-<!-- Deals Section (No JavaScript Version) -->
-<section class="py-5 bg-light">
-  <div class="container">
-    <div class="d-flex justify-content-between align-items-center mb-4">
-      <h3 class="fw-bold">Today’s Deals</h3>
-      <div class="bg-danger text-white px-3 py-1 rounded">
-        Ends in: <span class="fw-bold">02 : 00 : 00 : 00</span>
-      </div>
-    </div>
 
-    <div id="dealsCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <div class="row text-center">
-            <!-- Product Card 1 -->
-            <div class="col-md-3">
-              <div class="card border-0 position-relative overflow-hidden">
-                <div class="position-relative">
-                  <img src="img/casio1.webp" class="card-img-top">
-                  <span class="position-absolute top-0 start-0 bg-danger text-white px-2 py-1">-35%</span>
-                  <div class="product-icons position-absolute top-0 end-0 d-flex flex-column m-2">
-                    <button class="btn btn-light btn-sm mb-1"><i class="fas fa-eye"></i></button>
-                    <button class="btn btn-light btn-sm mb-1"><i class="fas fa-heart"></i></button>
-                    <button class="btn btn-light btn-sm"><i class="fas fa-sliders-h"></i></button>
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 class="fw-bold">Today’s Deals</h3>
+        <div class="bg-danger text-white px-3 py-1 rounded">
+          Ends in: <span class="fw-bold">02 : 00 : 00 : 00</span>
+        </div>
+      </div>
+
+      <div id="dealsCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="row text-center">
+
+              <div class="col-md-3">
+                <div class="card border-0 position-relative overflow-hidden">
+                  <div class="position-relative">
+                    <img src="img/casio1.webp" class="card-img-top">
+                    <span class="position-absolute top-0 start-0 bg-danger text-white px-2 py-1">-35%</span>
+                    <div class="product-icons position-absolute top-0 end-0 d-flex flex-column m-2">
+                      <button class="btn btn-light btn-sm mb-1"><i class="fas fa-eye"></i></button>
+                      <button class="btn btn-light btn-sm mb-1"><i class="fas fa-heart"></i></button>
+                      <button class="btn btn-light btn-sm"><i class="fas fa-sliders-h"></i></button>
+                    </div>
                   </div>
-                </div>
-                <div class="card-body">
-                  <p class="card-title">Product dummy title</p>
-                  <p class="text-danger fw-bold">$79.00</p>
-                  <button class="btn btn-outline-dark btn-sm"><i class="fas fa-shopping-cart"></i></button>
+                  <div class="card-body">
+                    <p class="card-title">Product dummy title</p>
+                    <p class="text-danger fw-bold">$79.00</p>
+                    <button class="btn btn-outline-dark btn-sm"><i class="fas fa-shopping-cart"></i></button>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Product Card 2 -->
-            <div class="col-md-3">
-              <div class="card border-0 position-relative overflow-hidden">
-                <div class="position-relative">
-                  <img src="img/casio2.avif" class="card-img-top">
-                  <span class="position-absolute top-0 start-0 bg-danger text-white px-2 py-1">-25%</span>
-                  <div class="product-icons position-absolute top-0 end-0 d-flex flex-column m-2">
-                    <button class="btn btn-light btn-sm mb-1"><i class="fas fa-eye"></i></button>
-                    <button class="btn btn-light btn-sm mb-1"><i class="fas fa-heart"></i></button>
-                    <button class="btn btn-light btn-sm"><i class="fas fa-sliders-h"></i></button>
+
+              <div class="col-md-3">
+                <div class="card border-0 position-relative overflow-hidden">
+                  <div class="position-relative">
+                    <img src="img/casio2.avif" class="card-img-top">
+                    <span class="position-absolute top-0 start-0 bg-danger text-white px-2 py-1">-25%</span>
+                    <div class="product-icons position-absolute top-0 end-0 d-flex flex-column m-2">
+                      <button class="btn btn-light btn-sm mb-1"><i class="fas fa-eye"></i></button>
+                      <button class="btn btn-light btn-sm mb-1"><i class="fas fa-heart"></i></button>
+                      <button class="btn btn-light btn-sm"><i class="fas fa-sliders-h"></i></button>
+                    </div>
                   </div>
-                </div>
-                <div class="card-body">
-                  <p class="card-title">Silver Watch</p>
-                  <p class="text-danger fw-bold">$60.00 <del class="text-muted ms-2">$100.00</del></p>
-                  <button class="btn btn-outline-dark btn-sm"><i class="fas fa-shopping-cart"></i></button>
+                  <div class="card-body">
+                    <p class="card-title">Silver Watch</p>
+                    <p class="text-danger fw-bold">$60.00 <del class="text-muted ms-2">$100.00</del></p>
+                    <button class="btn btn-outline-dark btn-sm"><i class="fas fa-shopping-cart"></i></button>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Product Card 3 -->
-            <div class="col-md-3">
-              <div class="card border-0 position-relative overflow-hidden">
-                <div class="position-relative">
-                  <img src="img/casio3.avif" class="card-img-top">
-                  <span class="position-absolute top-0 start-0 bg-danger text-white px-2 py-1">-25%</span>
-                  <div class="product-icons position-absolute top-0 end-0 d-flex flex-column m-2">
-                    <button class="btn btn-light btn-sm mb-1"><i class="fas fa-eye"></i></button>
-                    <button class="btn btn-light btn-sm mb-1"><i class="fas fa-heart"></i></button>
-                    <button class="btn btn-light btn-sm"><i class="fas fa-sliders-h"></i></button>
+
+              <div class="col-md-3">
+                <div class="card border-0 position-relative overflow-hidden">
+                  <div class="position-relative">
+                    <img src="img/casio3.avif" class="card-img-top">
+                    <span class="position-absolute top-0 start-0 bg-danger text-white px-2 py-1">-25%</span>
+                    <div class="product-icons position-absolute top-0 end-0 d-flex flex-column m-2">
+                      <button class="btn btn-light btn-sm mb-1"><i class="fas fa-eye"></i></button>
+                      <button class="btn btn-light btn-sm mb-1"><i class="fas fa-heart"></i></button>
+                      <button class="btn btn-light btn-sm"><i class="fas fa-sliders-h"></i></button>
+                    </div>
                   </div>
-                </div>
-                <div class="card-body">
-                  <p class="card-title">Leather Style</p>
-                  <p class="text-danger fw-bold">$45.00 <del class="text-muted ms-2">$60.00</del></p>
-                  <button class="btn btn-outline-dark btn-sm"><i class="fas fa-shopping-cart"></i></button>
+                  <div class="card-body">
+                    <p class="card-title">Leather Style</p>
+                    <p class="text-danger fw-bold">$45.00 <del class="text-muted ms-2">$60.00</del></p>
+                    <button class="btn btn-outline-dark btn-sm"><i class="fas fa-shopping-cart"></i></button>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Product Card 4 -->
-            <div class="col-md-3">
-              <div class="card border-0 position-relative overflow-hidden">
-                <div class="position-relative">
-                  <img src="img/casio4.avif" class="card-img-top">
-                  <span class="position-absolute top-0 start-0 bg-danger text-white px-2 py-1">-25%</span>
-                  <div class="product-icons position-absolute top-0 end-0 d-flex flex-column m-2">
-                    <button class="btn btn-light btn-sm mb-1"><i class="fas fa-eye"></i></button>
-                    <button class="btn btn-light btn-sm mb-1"><i class="fas fa-heart"></i></button>
-                    <button class="btn btn-light btn-sm"><i class="fas fa-sliders-h"></i></button>
+
+              <div class="col-md-3">
+                <div class="card border-0 position-relative overflow-hidden">
+                  <div class="position-relative">
+                    <img src="img/casio4.avif" class="card-img-top">
+                    <span class="position-absolute top-0 start-0 bg-danger text-white px-2 py-1">-25%</span>
+                    <div class="product-icons position-absolute top-0 end-0 d-flex flex-column m-2">
+                      <button class="btn btn-light btn-sm mb-1"><i class="fas fa-eye"></i></button>
+                      <button class="btn btn-light btn-sm mb-1"><i class="fas fa-heart"></i></button>
+                      <button class="btn btn-light btn-sm"><i class="fas fa-sliders-h"></i></button>
+                    </div>
                   </div>
-                </div>
-                <div class="card-body">
-                  <p class="card-title">Ted Baker</p>
-                  <p class="text-danger fw-bold">$38.00 <del class="text-muted ms-2">$76.00</del></p>
-                  <button class="btn btn-outline-dark btn-sm"><i class="fas fa-shopping-cart"></i></button>
+                  <div class="card-body">
+                    <p class="card-title">Ted Baker</p>
+                    <p class="text-danger fw-bold">$38.00 <del class="text-muted ms-2">$76.00</del></p>
+                    <button class="btn btn-outline-dark btn-sm"><i class="fas fa-shopping-cart"></i></button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <div class="row text-center">
-            <!-- More cards can be copied here if needed -->
-            <div class="col-md-3">
-              <div class="card border-0 position-relative overflow-hidden">
-                <div class="position-relative">
-                  <img src="img/G-Shcok line 2.jpeg" class="card-img-top">
-                  <span class="position-absolute top-0 start-0 bg-danger text-white px-2 py-1">-33%</span>
-                  <div class="product-icons position-absolute top-0 end-0 d-flex flex-column m-2">
-                    <button class="btn btn-light btn-sm mb-1"><i class="fas fa-eye"></i></button>
-                    <button class="btn btn-light btn-sm mb-1"><i class="fas fa-heart"></i></button>
-                    <button class="btn btn-light btn-sm"><i class="fas fa-sliders-h"></i></button>
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row text-center">
+
+              <div class="col-md-3">
+                <div class="card border-0 position-relative overflow-hidden">
+                  <div class="position-relative">
+                    <img src="img/G-Shcok line 2.jpeg" class="card-img-top">
+                    <span class="position-absolute top-0 start-0 bg-danger text-white px-2 py-1">-33%</span>
+                    <div class="product-icons position-absolute top-0 end-0 d-flex flex-column m-2">
+                      <button class="btn btn-light btn-sm mb-1"><i class="fas fa-eye"></i></button>
+                      <button class="btn btn-light btn-sm mb-1"><i class="fas fa-heart"></i></button>
+                      <button class="btn btn-light btn-sm"><i class="fas fa-sliders-h"></i></button>
+                    </div>
                   </div>
-                </div>
-                <div class="card-body">
-                  <p class="card-title">Citizen Eco</p>
-                  <p class="text-danger fw-bold">$67.00 <del class="text-muted ms-2">$100.00</del></p>
-                  <button class="btn btn-outline-dark btn-sm"><i class="fas fa-shopping-cart"></i></button>
+                  <div class="card-body">
+                    <p class="card-title">Citizen Eco</p>
+                    <p class="text-danger fw-bold">$67.00 <del class="text-muted ms-2">$100.00</del></p>
+                    <button class="btn btn-outline-dark btn-sm"><i class="fas fa-shopping-cart"></i></button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
 
+        <button class="carousel-control-prev" type="button" data-bs-target="#dealsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#dealsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#dealsCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#dealsCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Hero Section -->
+
   <section class="hero-section py-5">
     <div class="container">
       <div class="row align-items-center">
-        <!-- Text Column -->
+
         <div class="col-md-6 mb-4 mb-md-0">
           <p class="text-danger fw-semibold">SPECIAL OFFER</p>
           <h4 class="text-uppercase text-muted">Succulent Garden</h4>
@@ -293,7 +280,6 @@
           <a href="#" class="btn btn-outline-danger px-4 py-2">Explore The Shop</a>
         </div>
 
-        <!-- Image Column -->
         <div class="col-md-6 text-center">
           <img src="img/mainpicline3.webp" class="img-fluid shadow-lg" alt="Watch">
         </div>
@@ -302,51 +288,46 @@
   </section>
 
 
-  <!-- New Products Section -->
-<div class="container my-5">
-  <h3 class="section-title">New Products</h3>
-  <div class="row g-4">
+  <div class="container my-5">
+    <h3 class="section-title">New Products</h3>
+    <div class="row g-4">
 
-    <!-- Product 1 -->
-    <div class="col-sm-6 col-md-4 col-lg-3">
-      <div class="card product-card text-center p-3">
-        <img src="img/G-Shcok line 2.jpeg" class="img-fluid mb-3" alt="Watch 1">
-        <div class="product-title">Demo product title</div>
-        <div class="product-price">$80.00</div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card product-card text-center p-3">
+          <img src="img/G-Shcok line 2.jpeg" class="img-fluid mb-3" alt="Watch 1">
+          <div class="product-title">Demo product title</div>
+          <div class="product-price">$80.00</div>
+        </div>
       </div>
-    </div>
 
-    <!-- Product 2 -->
-    <div class="col-sm-6 col-md-4 col-lg-3">
-      <div class="card product-card text-center p-3">
-        <img src="img/G-Shock line2-3.jpg" class="img-fluid mb-3" alt="Watch 2">
-        <div class="product-title">11. Product with video</div>
-        <div class="product-price">$39.00</div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card product-card text-center p-3">
+          <img src="img/G-Shock line2-3.jpg" class="img-fluid mb-3" alt="Watch 2">
+          <div class="product-title">11. Product with video</div>
+          <div class="product-price">$39.00</div>
+        </div>
       </div>
-    </div>
 
-    <!-- Product 3 -->
-    <div class="col-sm-6 col-md-4 col-lg-3">
-      <div class="card product-card text-center p-3">
-        <img src="img/G-Shock second part1.jpg" class="img-fluid mb-3" alt="Watch 3">
-        <div class="product-title">9. Without shortcode</div>
-        <div class="product-price">$79.00</div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card product-card text-center p-3">
+          <img src="img/G-Shock second part1.jpg" class="img-fluid mb-3" alt="Watch 3">
+          <div class="product-title">9. Without shortcode</div>
+          <div class="product-price">$79.00</div>
+        </div>
       </div>
-    </div>
 
-    <!-- Product 4 -->
-    <div class="col-sm-6 col-md-4 col-lg-3">
-      <div class="card product-card text-center p-3">
-        <img src="img/Geshock1.avif" class="img-fluid mb-3" alt="Watch 4">
-        <div class="product-title">7. Sample affiliate product</div>
-        <div class="product-price">$29.00</div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card product-card text-center p-3">
+          <img src="img/Geshock1.avif" class="img-fluid mb-3" alt="Watch 4">
+          <div class="product-title">7. Sample affiliate product</div>
+          <div class="product-price">$29.00</div>
+        </div>
       </div>
-    </div>
 
+    </div>
   </div>
-</div>
 
- <section class="products-row">
+  <section class="products-row">
     <div class="product-box">
       <h2>Featured Products</h2>
       <img src="img/shop watch pic 1.jpeg" alt="Featured Watch">
@@ -369,8 +350,7 @@
     </div>
   </section>
 
-<div class="products-grid">
-    <!-- Featured Products -->
+  <div class="products-grid">
     <div class="product-column">
       <h2 class="section-title">Featured Products</h2>
 
@@ -399,7 +379,6 @@
       </div>
     </div>
 
-    <!-- Most View Products -->
     <div class="product-column">
       <h2 class="section-title">Most View Products</h2>
 
@@ -428,7 +407,6 @@
       </div>
     </div>
 
-    <!-- Bestseller Products -->
     <div class="product-column">
       <h2 class="section-title">Bestseller Products</h2>
 
@@ -459,7 +437,7 @@
     </div>
   </div>
 
-   <section class="latest-blogs">
+  <section class="latest-blogs">
     <h2>Latest Blogs</h2>
 
     <div class="blogs-container">
@@ -491,11 +469,9 @@
 
 
 
-  <!-- ✅ Footer Section -->
   <footer class="footer-tk">
     <div class="footer-tk-container">
 
-      <!-- Column 1 -->
       <div class="footer-tk-column">
         <div class="footer-tk-logo">🕒 Timekeeper</div>
         <p><strong>Address</strong><br>4710-4890 Breckinridge St, UK Burlington, VT 05401</p>
@@ -508,7 +484,7 @@
         </div>
       </div>
 
-      <!-- Column 2 -->
+
       <div class="footer-tk-column">
         <h4>About Menu</h4>
         <ul>
@@ -520,7 +496,7 @@
         </ul>
       </div>
 
-      <!-- Column 3 -->
+
       <div class="footer-tk-column">
         <h4>Usefull Links</h4>
         <ul>
@@ -532,7 +508,7 @@
         </ul>
       </div>
 
-      <!-- Column 4: Blogs -->
+
       <div class="footer-tk-column footer-tk-blogs">
         <h4>Latest Blogs</h4>
         <div class="footer-tk-blog-item">
@@ -559,6 +535,10 @@
   </footer>
 
 
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> </body>
+</body>
+
+
 </html>
