@@ -1,0 +1,94 @@
+    .about-heading {
+      color: #ff6f61;
+      font-weight: bold;
+    }
+    .about-section {
+      padding: 60px 0;
+    }
+    .about-image {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+        .logo-img {
+      max-height: 70px;
+      object-fit: contain;
+    }
+    .footer-section {
+      background-color: #f8f9fa;
+      padding: 60px 0;
+    }
+    .footer-logo {
+      height: 30px;
+      margin-bottom: 10px;
+    }
+    .social-icons a {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+    .blog-img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+    .footer-links a {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+      text-decoration: none;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+
+    .logo-img {
+      max-height: 120px; /* زيادة الارتفاع */
+      max-width: 100%; /* لا يتجاوز عرض العمود */
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+
+    .logo-img:hover {
+      transform: scale(1.05); /* تكبير عند المرور */
+    }
+
+    .logo-container {
+      padding: 20px 0;
+      background-color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .logo-img {
+        max-height: 90px; /* حجم مناسب للموبايل */
+      }
+    }
+
+
+      .logo-text {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      color: #222;
+      display: inline-block;
+      border: 2px solid #000;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background: linear-gradient(to right, #f5f5f5, #e0e0e0);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .logo-text:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 576px) {
+      .logo-text {
+        font-size: 22px;
+        padding: 8px 16px;
+      }
+    }
+    
